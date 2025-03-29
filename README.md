@@ -104,4 +104,4 @@ This project is open-source and available under the MIT License.
 
 We welcome contributions! Feel free to submit issues or pull requests to help improve this project. 🚀
 
-🎯 Made with ❤️ by [Your Name]
+🎯 Made with ❤️ by Anil Tigga
