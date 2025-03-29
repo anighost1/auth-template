@@ -1,83 +1,68 @@
-Authentication Template with Email Verification
+🚀 Authentication Template with Email Verification
 
-Overview
+🌟 Overview
 
-This is a Node.js-based authentication template that includes:
+Welcome to the Authentication Template – a robust and secure user authentication system built with Node.js. This project provides essential features like email verification, JWT authentication, and secure password hashing to help you kickstart your authentication system effortlessly.
 
-User registration (signup) with email verification using Node-Mailjet
+🔑 Key Features
 
-User login with JWT-based authentication
+✅ User Signup with email verification using Node-Mailjet ✉️✅ User Login with JWT-based authentication 🔐✅ Secure Password Hashing using bcrypt 🔑✅ Token-Based Authentication for secure API access 🚀✅ Resend Email Verification option for unverified users 🔄✅ MongoDB with Mongoose ORM for efficient data storage 📦
 
-Password hashing using bcrypt
+🛠️ Tech Stack
 
-Secure token generation for authentication
+Node.js 🟢
 
-MongoDB as the database with Mongoose ORM
+Express.js 🚀
 
-Express.js as the backend framework
+MongoDB + Mongoose 🗄️
 
-Features
+bcrypt for password hashing 🔑
 
-User signup with email verification
+jsonwebtoken (JWT) for authentication 🔐
 
-User login with JWT token authentication
+Node-Mailjet for email verification 📩
 
-Password hashing with bcrypt
+⚡ Installation Guide
 
-Secure API routes with token-based authentication
+✅ Prerequisites
 
-Resend email verification option
+Ensure you have the following installed:
 
-Tech Stack
+Node.js (LTS version recommended)
 
-Node.js
+MongoDB (local or cloud-based, e.g., MongoDB Atlas)
 
-Express.js
+🚀 Steps to Get Started
 
-MongoDB with Mongoose
-
-bcrypt for password hashing
-
-jsonwebtoken (JWT) for authentication
-
-Node-Mailjet for email verification
-
-Installation
-
-Prerequisites
-
-Make sure you have Node.js and MongoDB installed on your system.
-
-Steps to Install
-
-Clone the repository:
+1️⃣ Clone the repository:
 
 git clone https://github.com/anighost1/auth-template.git
 cd auth-template
 
-Install dependencies:
+2️⃣ Install dependencies:
 
 npm install
 
-Configure environment variables:
+3️⃣ Configure environment variables:
 Create a .env file in the root directory and add the following:
 
-PORT = port number
-MONGO_URI = mongo DB URI
-JWT_SECRET = a jwt secret key
-MJ_APIKEY = mailjet api key
-MJ_SECRET = mailjet secret key
-MJ_SENDER_EMAIL = sender email id
-MJ_SENDER_NAME = sender name
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret_key
+MJ_APIKEY=your_mailjet_api_key
+MJ_SECRET=your_mailjet_secret_key
+MJ_SENDER_EMAIL=your_sender_email
+MJ_SENDER_NAME=your_sender_name
 
-
-Start the server:
+4️⃣ Start the server:
 
 npm start
 
-API Endpoints
+🎉 The server should now be running at http://localhost:5000 🎉
 
-1. Register User (Signup)
+📌 API Endpoints
+
+🔹 1. Register User (Signup)
 
 Endpoint: POST /api/auth/signup
 
@@ -92,14 +77,13 @@ Request Body:
   "password": "yourpassword"
 }
 
-
-2. Verify Email
+🔹 2. Verify Email
 
 Endpoint: GET /api/auth/verify-email/:token
 
 Description: Verifies the user's email via the token sent in the email.
 
-3. Login User
+🔹 3. Login User
 
 Endpoint: POST /api/auth/login
 
@@ -108,14 +92,16 @@ Description: Authenticates the user and returns a JWT token.
 Request Body:
 
 {
-  "identifier": "emailOrPassword",
+  "identifier": "emailOrUsername",
   "password": "yourpassword"
 }
 
-License
+📜 License
 
 This project is open-source and available under the MIT License.
 
-Contributing
+💡 Contributing
 
-Feel free to submit issues or pull requests for improvements.
+We welcome contributions! Feel free to submit issues or pull requests to help improve this project. 🚀
+
+🎯 Made with ❤️ by [Your Name]
