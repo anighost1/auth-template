@@ -10,7 +10,6 @@ Welcome to the **Authentication Template** – a robust and secure user authenti
 ✅ **User Login** with JWT-based authentication 🔐\
 ✅ **Secure Password Hashing** using **bcrypt** 🔑\
 ✅ **Token-Based Authentication** for secure API access 🚀\
-✅ **Resend Email Verification** option for unverified users 🔄\
 ✅ **MongoDB with Mongoose ORM** for efficient data storage 📦
 
 ---
